@@ -1,0 +1,510 @@
+@import'_common';
+
+
+header{
+    position:fixed;
+    left:0; top:0;
+    width:100%;
+    padding:30px 0;
+    z-index:9;
+    .invert{filter:invert(1)}
+    
+    .head{
+        width:90%; margin:0 auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            a{
+                color:#fff;
+                background: url('../img/img_logo1.svg')no-repeat;
+                font-size:0;
+                width:200px;height: 50px;
+                display: inline-block;
+            }
+        }
+        nav{
+            margin-left:50%;
+            a{color:#fff;
+            padding:10px;}
+        }
+
+        // ============QQQQQ버거메뉴 안보이는거=================================================================
+        .burger-menu{
+            span{
+                // border-top:1px solid #fff;
+                // width:2px;height: 10px;
+                display:block;
+                border-top:3px solid #eee;
+                width:25px;height:8px;
+            }
+        }
+    }
+}
+
+
+main{}
+.visual{
+    position: relative; overflow: hidden;
+    width:100%;height: 100vh;
+    >div{
+        position: absolute;
+        left:0; top:0;
+        width:100%;height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 50px;
+        margin:0 20px;
+        p{
+            color:#fff;
+            font-size:3rem;
+            line-height: 1.6;
+            font-family: 'Noto Serif KR', serif;
+            small{
+                display: block;
+                font-size: 1.5rem;
+                font-weight: normal;
+            }
+        }
+        
+    }
+    img{
+        height: 100%;
+        width:100%;
+    }
+}
+
+.plan{
+    >div{
+        width:80%;
+        margin:8% auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p:nth-child(1){
+            width:50%; 
+            b{
+                background:url(../img/img_plan.png) center / 170px no-repeat;
+                width:200px;height:30vh;
+                font-family: WiseDidot;
+                font-weight: normal;
+                
+                display:flex; justify-content: center;
+                align-items: center;
+                font-size:4rem;   
+                margin:0 auto;            
+            }
+        }
+        p:nth-child(2){
+            width:50%;
+            white-space: pre-line;
+            font-size:1.1rem;
+            color:#888;
+            font-family: "Noto Serif KR";
+            // font-family: "Crimson Text", "Noto Serif KR";
+            // font-weight:600;
+            line-height: 2;
+
+
+            
+            small{
+                font-size:16px;
+                font-family: WiseDidot;
+                font-weight: normal;
+                color:#000;
+
+            }
+        }
+        a{
+            border:1px solid rgb(191, 131, 101);
+            padding:10px 30px;
+            text-align: center;
+            color:rgb(191, 131, 101);
+            font-size:13px;
+            ;
+        }
+        a:hover{
+            background-color:rgb(191, 131, 101);
+            color:#fff;
+            transition:.1s
+
+        }
+    }
+}
+
+.cel{
+    font-family: WiseDidot;
+    font-weight: normal;
+    text-align: center;
+    background: #f7f5ef;
+    padding:100px 0;
+    width:100%;
+    
+    h2{
+        font-size:78px;
+        font-family: WiseDidot;
+        font-weight: normal;
+    }
+    p{
+        white-space: pre-line;        
+        font-weight: normal;
+        font-size:14px;
+        color:#888;
+        a{            
+            border:1px solid rgb(191, 131, 101);
+            padding:10px 30px;
+            text-align: center;
+            color:rgb(191, 131, 101);
+            font-size:13px;
+            display:inline-block;
+            margin:30px 0;
+        }
+        a:hover{
+            background-color:rgb(191, 131, 101);
+            color:#fff;
+            transition:.4s
+        }
+    }
+
+    .slide{
+        width:100%;
+        margin-bottom: 30px;
+        align-items: center;
+        overflow:hidden;
+
+        .slide1{
+            display: flex;
+            justify-content: space-between;
+            figure{
+                position:relative;
+                margin-bottom:30px;
+                width:31%;
+
+                img{
+                    width:100%;
+                }
+                figcaption{
+                    font-size:0.8rem;
+                    text-align: left;
+                    padding-left: 3em;
+                }
+                figcaption::before{
+                    content: '';
+                    position: absolute;
+                    left:5%;bottom:0%;
+                    display:block;
+                    border-left:2px solid rgb(191, 131, 101);
+                    width:1% ; height:60px;
+                }
+            }
+            figure:hover{
+                color:rgb(191, 131, 101);
+                cursor:pointer;
+            }
+        }
+
+        >p{
+            display: flex;
+            justify-content: center;
+
+            // margin:0 atuo;
+            width:100%;//////////////////////////////////////// 왜 width가 100이 앙니라 150 이여야 가운데에 맞춰지는지 여쭤보기
+            span{
+                display: inline-block;
+                width:10px;height: 10px;
+                border-radius: 100%;
+                background: #ddd;
+                margin:.3%;
+                // text-align: center;
+                // align-items: center;
+                // vertical-align: middle;
+            }
+            span:nth-child(2){
+                background-color:rgb(191, 131, 101);
+            }
+        }
+    }
+}
+
+// ===================왜 span상태에서 안보이고 inline-block해줘야 보이는지 여쭤보기===========================
+
+.styling{
+    padding:120px 50px 0 80px;
+    .txt{
+        width:50%;
+        margin-top:400px;
+        font-family: WiseDidot;
+        font-weight: normal;
+        background: #fff;
+        float:right;
+        // vertical-align: middle;
+        text-align: center;
+        white-space: pre-line;
+        h2{
+            font-family: WiseDidot;
+            font-weight: normal;
+            font-size:78px;
+            }
+        p{
+            font-size:0.85rem;
+            color:#888;
+            a{
+                border:1px solid rgb(191, 131, 101);
+                padding:10px 30px;
+                text-align: center;
+                color:rgb(191, 131, 101);
+                font-size:13px;
+                display: inline-block; // ================안먹다가 인라인블럭하니까 먹음 이유QQQQQQQQQQ=============/
+                margin:30px 0;
+            }
+
+            
+            a:hover{
+                background-color:rgb(191, 131, 101);
+                color:#fff;
+                transition:.4s
+            }
+        }
+        
+    }
+    .photo{
+        margin:0 1%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin:a auto;
+        >div{
+            position:relative;
+            margin-bottom:10%;
+            width:48%;
+            figure{
+                position:relative;
+                width:100%;
+                img{width:100%;}
+                img:hover{
+                    background-color: rgb(191, 131, 101);
+                    transition:.4s;
+                    }
+                &::after{
+                    content:'View More';
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    width:100%;
+                    background-color: rgba(191, 131, 101,0.7);
+                    color:#fff;
+                    padding-left:5%;
+                    padding-top:5%;
+                    box-sizing: border-box;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+                &:hover::after{
+                    opacity: 1;}
+            }
+            p{
+                padding:0 10%;
+                font-size:0.9rem;
+                margin-bottom:10%;
+                small{}
+            }
+            p::before{
+                content:'';
+                position: absolute;
+                left: 5%;
+                width: 1px;bottom:6%;
+                height: 15%;
+                // height: calc(100% + 20px);
+                background-color: #bf8365;
+            }
+            
+        }  
+        >div:hover{
+            width:48%;
+            color:rgb(191, 131, 101);
+            cursor: pointer;
+        }
+    }
+}
+// div가 부모가 되고, p가 자식 
+// =========================================img에 hover넣기 QQQQQQQQQQQQQQQQQQQQ
+
+.letter{
+    img{
+        width:100%;
+    }
+}
+
+// QQQQQQQQQQQQQQQQQQQQQQQ메뉴 상단바 색 변하는거 QQQQQQQQQ==============================================/
+
+.partner{
+    padding:0px;
+    box-sizing: border-box;
+    position: relative;
+    // margin-bottom:15%;
+    margin:3% 0 6% 0;
+    hgroup{
+        font-family: WiseDidot;
+        h2{
+            text-align: center;
+            font-size:78px;
+            font-weight: normal;
+            position:relative;
+            z-index:1;
+        }
+        h3{
+            font-size:14px;
+            position:absolute;
+            left:5%;top:5%;
+            font-weight: normal;
+            color:#888;
+            white-space: pre-line;
+        }
+    }
+    .pt-body{
+        align-items: center;
+        nav{
+            a{
+                margin:1% 0;    
+                padding:0 90px;
+                font-size:1.4rem;
+                display: block;
+                color:#888;
+            }
+            a:hover{
+                color:rgb(191, 131, 101)
+            }
+            a:hover, a.active{
+                border-bottom:1px solid rgb(191, 131, 101);
+            }
+        }
+        figure{
+            width:45%;
+            position: absolute;
+            right:5%;top:2%;
+            img{
+                width:100%;
+                
+            }
+        }
+    }
+}
+.happy{
+    text-align: center;
+    background-color:#f7f5ef;
+    height:500px;
+    padding:10% 0;
+    figure{
+        margin:0 auto;
+        width:300px;
+        img{width:100%;}  //////////////////// 이미지 줄이기 QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ
+    }
+    p{
+        color:#888;
+        padding:30px 0;
+        font-size:1.1rem;
+    }
+    a{
+        border:1px solid rgb(191, 131, 101);
+        color:rgb(191, 131, 101);
+        padding:10px 30px;
+        font-size:14px;
+        display: inline-block;
+        margin:10px 0;
+    }
+    a:hover{
+        background-color: rgb(191, 131, 101);
+        color:#fff;
+        transition:.4s;
+    }
+}
+
+
+
+
+/////////////////////// footer////////////////////////////////////// 
+
+footer{
+    width:100%;
+    margin:0 auto; padding:2% 5% 0.5% 5%;
+    border-top: 1px solid #ddd;
+    position: relative;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        
+        .left{
+            width:30%;
+            display:flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+
+            img{width:50%;}
+
+            nav{
+                display:flex;
+                a{
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right:5px;
+                    width:30px; height:30px;
+                    border-radius: 100%;
+                    border:1px solid #000;
+                    svg{height:60%;};
+                    text-align: center;
+                }
+            }
+        }
+
+        .right{
+            width:65%;
+            >div:nth-of-type(1){
+                display:flex;
+                justify-content: space-between;
+
+                p{
+                    width:50%;
+                    font-size:0.7rem;
+                    line-height: 30px;
+                    color:#888;
+                }
+                nav{
+                    width:50%;                
+                    a{
+                        width:45%;
+                        display: inline-block;
+                        font-size:0.7rem;
+                        color:#000;
+                    }
+                }
+            }
+            >.end{
+                font-size:0.7rem;
+                color:#888888;
+                line-height: 30px;
+                display:flex;
+                justify-content: space-between;
+                border-top:1px solid #888888;
+                padding:2% 0;
+                margin-top:2%;
+                p{}
+                a{
+                    display:inline-block;                    
+                    padding-left: 40px;
+                    color:#888;
+                }
+            }
+            // &::after{
+            //     content: '';
+            //     border-top:1px solid #888;
+            //     width:100%;
+            //     display: block;
+            // }
+        }
+    }
+}
+
+
