@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/index.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     
@@ -17,7 +22,7 @@
                 <a href="#">PLANNER</a>
                 <a href="#">VENUE</a>
                 <a href="#">COLLECTION</a>
-                <a href="#">CONTACT</a>
+                <a href="contact.html">CONTACT</a>
             </nav>
             <div class="burger-menu">
                 <span></span>
@@ -28,16 +33,68 @@
 
     <main>
         <div class="visual">
-            <div>
-                <p>
-                    2022 S/S 와이즈웨딩 스타일 페어
-                    <small>
-                        예비신부가 가장 보고싶어하는 웨딩박람회<br>
-                        2022.01.08~2022.01.09
-                    </small>
-                </p>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div>
+                        <p>
+                            2022 S/S 와이즈웨딩 스타일 페어
+                            <small>
+                                예비신부가 가장 보고싶어하는 웨딩박람회<br>
+                                2022.01.08~2022.01.09
+                            </small>
+                        </p>
+                    </div>
+                    <img src="img/img_visual.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <p>
+                            I AM HAPPY,TOO!
+                            <small>
+                                당신의 행복이 와이즈웨딩의 행복입니다.<br>
+                                웨딩전문가그룹 와이즈웨딩
+                            </small>
+                        </p>
+                    </div>
+                    <img src="img/img_wbanner2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <p>
+                            웨딩의 첫 걸음
+                            <small>
+                                와이즈웨딩의 웨등홀 검색 시스템을 만나보세요.<br>
+                            </small>
+                        </p>
+                    </div>
+                    <img src="img/img_wbanner3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <p>
+                            차별화된 웨딩스타일 
+                            <small>
+                                웨딩전문가의 스타일링 상담을 받아보세요.<br>
+                            </small>
+                        </p>
+                    </div>
+                    <img src="img/img_wbanner4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <p>
+                            실력과 진심으로 
+                            <small>
+                                와이즈웨딩과 함께 성장할 와이즈인을 찾습니다.<br>
+                            </small>
+                        </p>
+                    </div>
+                    <img src="img/img_wbanner5.jpg" alt="">
+                </div>
             </div>
-            <img src="img/img_visual.jpg" alt="">
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div> -->
         </div>
 
         <div class="plan">
@@ -198,7 +255,7 @@
     <footer>
         <div class="container">
             <div class="left">
-                <img src="img/img_logo.svg" alt="로고1">
+                <img src="./img/img_logo.svg" alt="로고1">
                 <nav>
                     <a href="http://pf.kakao.com/_xbPJxhE" target="_blank" title="카카오톡">
                         <svg version="1.0" id="footsns4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 14.699" enable-background="new 0 0 16 14.699" xml:space="preserve">
@@ -301,5 +358,27 @@
         </div>    
     </footer>
 
+
+    <script>
+        const elHead = document.querySelector('.head .invert')
+    
+
+        var swiper = new Swiper(".visual", {
+            effect: "fade",
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            // },
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
+        });
+    
+    </script>
 </body>
 </html>
